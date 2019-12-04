@@ -6,30 +6,56 @@
   <script src="js/scripts.js"></script>
   <head>
     <meta charset="utf-8">
-    <title>Dating Quiz</title>
+    <title>Soulmate Quiz</title>
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron" id="title">
+        <h1>Complete this quiz to be matched with your soulmate</h1>
+      </div>
+
       <form id="choices">
-        <label for="animalChoice">Choose an Animal!</label>
+        <label for="animalChoice">Which of these animals would you rather be?</label>
         <select class="form-control" id="animalChoice">
-          <option value="1">Turtles</option>
-          <option value="2">Snakes</option>
-          <option value="3">Insects</option>
+          <option value="1">Turtle</option>
+          <option value="2">Polar Bear</option>
+          <option value="3">Flamingo</option>
         </select>
 
-      <button class="btn btn-primary">Submit</button>
+        <label for="foodChoice">Which of these foods would you rather eat everyday for ten years?</label>
+        <select class="form-control" id="foodChoice">
+          <option value="1">Almonds</option>
+          <option value="2">Yogurt</option>
+          <option value="3">Apples</option>
+        </select>
 
-      <div id="chris">
-        <p>Congrats! You should date Chris!</p>
+        <label for="activityChoice">Which of these would you rather be doing right now?</label>
+        <select class="form-control" id="activityChoice">
+          <option value="1">Watching T.V.</option>
+          <option value="2">Reading</option>
+          <option value="3">Napping</option>
+        </select>
+
+      <button class="btn btn-primary">Find soulmate!</button>
+
+      <div id="chris" class= "hidden">
+        <img src="img/chris.jpeg" alt="chris">
+        <p>Congrats! Your soulmate is Chris Hemsworth!</p>
       </div>
 
-      <div id="wonderwoman">
-        <p>Congrats! You should date Wonder Woman!</p>
+      <div id="cardi" class="hidden">
+        <img src="img/cardi.jpeg" alt="wonderwoman" id="cardib">
+        <p>Congrats! Your soulmate is Cardi B!</p>
       </div>
 
-      <div id="obama">
-        <p>Congrats! You should date Obama!</p>
+      <div id="obama" class="hidden">
+        <img src="img/obama.jpeg" alt="a picture of former prez obama.">
+        <p>Congrats! Your soulmate is Barack Obama!</p>
+      </div>
+
+      <div id="soha" class="hidden">
+        <img src="img/soha.jpeg" alt="a picture of soha." id="me">
+        <p>Congrats! Your soulmate is me!</p>
       </div>
 
     </div>
